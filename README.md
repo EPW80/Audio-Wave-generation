@@ -45,6 +45,10 @@ To run the output binary, use this command:
 
 When run, the program will create a file named sine.wav in the same directory, containing a one-second sine wave at 440 Hz.
 
+## Notation
+
+Code runs between 0(n) and 0(1) time
+
 ## Code Overview
 
 The code works by generating a buffer of audio samples for a sine wave at a particular frequency, then writing this buffer to a WAV file.
