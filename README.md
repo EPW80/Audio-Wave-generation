@@ -1,6 +1,6 @@
 # Sine Wave Generator
 
-This project is a simple command-line application written in C++ that generates a one-second sine wave audio file in the WAV format.
+This project is a simple command-line application written in C++ that generates a sine wave audio file in the WAV format.
 
 ## Requirements
 
