@@ -43,7 +43,7 @@ To run the output binary, use this command:
 ./sineWave
 ```
 
-When run, the program will create a file named sine.wav in the same directory, containing a one-second sine wave at 440 Hz.
+When run, the program will create a file named sine.wav in the same directory, containing a WAV file with the frequency and duration selected from terminal input
 
 ## Notation
 
