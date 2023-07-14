@@ -1,6 +1,6 @@
-# Sine Wave Generator
+# Sound Wave Generator
 
-This project is a simple command-line application written in C++ that generates a sine wave audio file in the WAV format.
+This project is a simple command-line application written in C++ that generates a sound wave audio file in the WAV format.
 
 ## Requirements
 
@@ -34,16 +34,16 @@ brew install libsndfile
 To compile the program, navigate to the directory containing the source file (let's say it's named sineWave.cpp), and use the following command:
 
 ```
-g++ -o sineWave sineWave.cpp -lsndfile
+g++ main.cpp waveForms.cpp -o main -lsndfile
 ```
 
 To run the output binary, use this command:
 
 ```
-./sineWave
+./waveGen
 ```
 
-When run, the program will create a file named sine.wav in the same directory, containing a WAV file with the frequency and duration selected from terminal input
+When run, the program will create a file named audio.wav in the same directory, containing a WAV file with the frequency and duration selected from terminal input
 
 ## Notation
 
