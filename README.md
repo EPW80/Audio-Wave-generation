@@ -43,6 +43,13 @@ To run the output binary, use this command:
 ./waveGen
 ```
 
+Then select frequency and duration:
+<filename> <frequency> <duration> <waveform>
+
+```
+./waveGen 300 3 sawtooth
+```
+
 When run, the program will create a file named audio.wav in the same directory, containing a WAV file with the frequency and duration selected from terminal input
 
 ## Notation
