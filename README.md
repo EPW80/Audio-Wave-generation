@@ -70,6 +70,8 @@ After generating the audio data, the function sets up the information structure 
 
 This is a basic example and does not handle any errors that might occur during file writing. It also assumes that the system's short data type is 16 bits and little-endian, as this is what the .wav format expects. The program may need to be adjusted for systems with different configurations.
 
+Make sure to replace main.cpp and waveForms.cpp with the correct filenames if they are different. And ensure that you are in the correct directory where your source files are located.
+
 ## Contributor
 
 Erik Williams
