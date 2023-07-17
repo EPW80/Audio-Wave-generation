@@ -29,28 +29,36 @@ For macOS:
 brew install libsndfile
 ```
 
-## Usage
+## Compilation & Usage
 
-To compile the program, navigate to the directory containing the source file (let's say it's named waveForms.cpp), and use the following command:
+To compile the program, navigate to the project directory and use the provided Makefile:
 
 ```
-g++ main.cpp waveForms.cpp -o main -lsndfile
+make
 ```
 
-To run the output binary, use this command:
+This will produce an executable named main. To run it, use this command:
 
 ```
 ./main
 ```
 
-Then select frequency and duration:
+You can provide the parameters as follows:
 <filename> <frequency> <duration> <waveform>
+
+Example:
 
 ```
 ./main sine 3 300 600 900
 ```
 
-When run, the program will create a file named audio.wav in the same directory, containing a WAV file with the provided frequencies and duration.
+When run, the program will create a WAV file in the same directory, containing a sound wave with the provided frequencies and duration.
+
+To clean up the compiled files, you can use:
+
+```
+make clean
+```
 
 ## Notation
 
@@ -69,8 +77,6 @@ After generating the audio data, the function sets up the information structure 
 ## Note
 
 This is a basic example and does not handle any errors that might occur during file writing. It also assumes that the system's short data type is 16 bits and little-endian, as this is what the .wav format expects. The program may need to be adjusted for systems with different configurations.
-
-Make sure to replace main.cpp with the correct filename if it's different, and ensure that you are in the correct directory where your source files are located.
 
 ## Contributor
 
