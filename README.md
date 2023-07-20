@@ -62,7 +62,7 @@ make clean
 
 ## Notation
 
-Code runs between 0(n) and 0(1) time
+O(1): This is constant time complexity. No matter how large the input becomes, the algorithm will always take roughly the same amount of time. This is the ideal scenario for many operations as the time taken by the algorithm isn't dependent on the size of the input.
 
 ## Code Overview
 
