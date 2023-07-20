@@ -1,9 +1,20 @@
-#pragma once
+// Copyright 2023 Erik Williams
+
+#ifndef DESKTOP_AUDIO_WAVE_GENERATION_WAVEFORMS_H_
+#define DESKTOP_AUDIO_WAVE_GENERATION_WAVEFORMS_H_
+
 #include <cmath>
 
-const double TWO_PI = M_PI * 2;
+namespace waveforms {
+    const double kTwoPi = 2.0 * M_PI;
+    // Generates a sine wave for the given phase x.
+    double SineWave(double x);
+    // Generates a square wave for the given phase x.
+    double SquareWave(double x);
+    // Generates a sawtooth wave for the given phase x.
+    double SawtoothWave(double x);
+    // Generates a triangle wave for the given phase x.
+    double TriangleWave(double x);
+}  // namespace waveforms
 
-double sine_wave(double x);
-double square_wave(double x);
-double sawtooth_wave(double x);
-double triangle_wave(double x);
+#endif  // DESKTOP_AUDIO_WAVE_GENERATION_WAVEFORMS_H_

@@ -1,0 +1,8 @@
+# Root directory of your project, used for deriving header guard CPP variable.
+set noparent
+
+# Use Google's default header guard checks
+filter=-build/header_guard:MyProjectName/
+
+# Specify which file extensions to lint
+extensions=cpp,h,hpp

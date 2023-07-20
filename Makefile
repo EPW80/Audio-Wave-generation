@@ -1,6 +1,6 @@
 # Variables
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++11
+CXXFLAGS = -Wall -Wextra -pedantic -std=c++11 -O2
 LDLIBS = -lsndfile -lm
 
 # Targets
@@ -22,4 +22,4 @@ include $(wildcard *.d)
 # Cleanup
 .PHONY: clean
 clean:
-	rm -f *.o *.d main
+	rm -f *.o *.d main *~

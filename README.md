@@ -1,6 +1,12 @@
 # Sound Wave Generator
 
-Generate WAV audio files with custom frequencies and waveforms using this straightforward C++ command-line utility.
+Generate WAV audio files with custom frequencies and waveforms using this straightforward C++ command-line utility. The code follows the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) for consistency and readability.
+
+## Technolgy used
+
+- C++
+
+- cpplint
 
 ## Requirements
 
