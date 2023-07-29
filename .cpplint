@@ -5,4 +5,5 @@ set noparent
 filter=-build/header_guard:MyProjectName/
 
 # Specify which file extensions to lint
-extensions=cpp,h,hpp
+extensions=cc,h,hpp,cpp
+

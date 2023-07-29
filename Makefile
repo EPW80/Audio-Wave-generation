@@ -9,12 +9,12 @@ all: main
 main: main.o waveForms.o
 	$(CXX) -o $@ $^ $(LDLIBS)
 
-main.o: main.cpp waveForms.h
+main.o: main.cc waveForms.h
 
-waveForms.o: waveForms.cpp waveForms.h
+waveForms.o: waveForms.cc waveForms.h
 
 # Automatic dependency generation
-%.d: %.cpp
+%.d: %.cc
 	@$(CXX) $(CXXFLAGS) $< -MM -MT $(@:.d=.o) >$@
 
 include $(wildcard *.d)

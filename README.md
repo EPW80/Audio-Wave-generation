@@ -1,7 +1,6 @@
 # Sound Wave Generator
 
-Generate WAV audio files with custom frequencies and waveforms using this straightforward C++ command-line utility. The code follows the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) for consistency and readability.
-
+Generate WAV audio files with custom frequencies and waveforms using this straightforward C++ command-line utility.
 ## Technolgy used
 
 - C++
@@ -75,10 +74,6 @@ O(1): Represents constant time complexity. Regardless of input size, the algorit
 The utility generates a buffer of audio samples for multiple audio waves at diverse frequencies and subsequently writes this buffer to a WAV file. Constants include SAMPLE_RATE (samples per second of audio), TWO_PI (2×Pi for full circle representation in radians), and MAX_AMPLITUDE (maximum audio wave amplitude).
 
 The main function determines the increment for each audio sample to produce the desired frequency. It then populates a buffer with audio samples for each frequency. Samples are produced by evaluating the waveform function's audio at the current wave position, then scaling and translating the [-1,1] function range to a 16-bit signed integer range. After audio data production, the program configures the libsndfile info structure (sfinfo), opens the output file, writes the audio data, and concludes by closing the file.
-
-## Note
-
-While this is a foundational example, it doesn't safeguard against possible file writing errors. It assumes a 16-bit, little-endian system short data type, aligning with .wav format expectations. For different configurations, adjustments might be required.
 
 ## Contributor
 
