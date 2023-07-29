@@ -51,7 +51,7 @@ This will produce an executable named main.
 Run the program with:
 
 ```
-./main <output_file_name> <waveform> <duration> <frequency1> <frequency2> ... <frequencyN>
+./main <output_file_name> <waveform> <duration> <frequency1> 
 ```
 
 Example:
@@ -60,7 +60,7 @@ Example:
 ./main output.wav triangle 3 300
 ```
 
-This command will create an "output.wav" file, containing a triangle waveform of 3 seconds duration with frequencies of 300Hz, 600Hz, and 900Hz.
+This command will create an "output.wav" file, containing a triangle waveform of 3 seconds duration with frequencies of 300Hz.
 
 To clean up the compiled files, you can use:
 
