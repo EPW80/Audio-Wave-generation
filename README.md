@@ -82,9 +82,12 @@ O(1): Represents constant time complexity. Regardless of input size, the algorit
 
 This utility constructs a buffer filled with audio samples for multiple waveforms at various frequencies. It then uses this buffer to create a WAV file. Some critical constants include:
 
-SAMPLE_RATE: The number of audio samples taken per second.
-TWO_PI: Represents 2×Pi for a full circle in radians.
-MAX_AMPLITUDE: The highest amplitude the audio wave can achieve.
+- SAMPLE_RATE: The number of audio samples taken per second.
+
+- TWO_PI: Represents 2×Pi for a full circle in radians.
+
+- MAX_AMPLITUDE: The highest amplitude the audio wave can achieve.
+
 The main function calculates the increment needed for each audio sample to generate the desired frequency. It then fills a buffer with the audio samples corresponding to each frequency. These samples are derived from the waveform function's evaluation at the current wave position. This is followed by scaling and translating the waveform's [-1,1] range to a 16-bit signed integer domain. Once the audio data generation is complete, the program sets up the libsndfile info structure (sfinfo), opens the designated output file, writes the audio data, and finally, closes the file.
 
 ## Contributor
