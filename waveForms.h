@@ -1,7 +1,7 @@
 // Copyright 2023 Erik Williams
 
-#ifndef DESKTOP_AUDIO_WAVE_GENERATION_WAVEFORMS_H_
-#define DESKTOP_AUDIO_WAVE_GENERATION_WAVEFORMS_H_
+#ifndef WAVEFORMS_H_
+#define WAVEFORMS_H_
 
 #include <cmath>
 
@@ -17,4 +17,4 @@ namespace waveforms {
     double TriangleWave(double x);
 }  // namespace waveforms
 
-#endif  // DESKTOP_AUDIO_WAVE_GENERATION_WAVEFORMS_H_
+#endif  // WAVEFORMS_H_
