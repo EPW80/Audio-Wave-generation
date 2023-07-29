@@ -1,7 +1,7 @@
 # Variables
 CXX = g++
-CXXFLAGS = -Wall -Wextra -pedantic -std=c++11 -O2
-LDLIBS = -lsndfile -lm
+CXXFLAGS = -Wall -Wextra -pedantic -std=c++11 -O2 -fsanitize=address -fno-omit-frame-pointer
+LDLIBS = -lsndfile -lm -fsanitize=address
 
 # Targets
 all: main
