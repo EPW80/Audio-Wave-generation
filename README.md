@@ -1,11 +1,14 @@
 # Sound Wave Generator
 
 Generate WAV audio files with custom frequencies and waveforms using this straightforward C++ command-line utility.
+
 ## Technolgy used
 
 - C++
 
 - cpplint
+
+- libsndfile library
 
 ## Requirements
 
@@ -54,7 +57,7 @@ Run the program with:
 Example:
 
 ```
-./main output.wav triangle 3 300 600 900
+./main output.wav triangle 3 300
 ```
 
 This command will create an "output.wav" file, containing a triangle waveform of 3 seconds duration with frequencies of 300Hz, 600Hz, and 900Hz.
@@ -65,15 +68,24 @@ To clean up the compiled files, you can use:
 make clean
 ```
 
+You can also test the program with default parameters
+
+```
+make test
+```
+
 ## Time Complexity Notation
 
 O(1): Represents constant time complexity. Regardless of input size, the algorithm approximately takes a consistent amount of time.
 
 ## Code Overview
 
-The utility generates a buffer of audio samples for multiple audio waves at diverse frequencies and subsequently writes this buffer to a WAV file. Constants include SAMPLE_RATE (samples per second of audio), TWO_PI (2×Pi for full circle representation in radians), and MAX_AMPLITUDE (maximum audio wave amplitude).
+This utility constructs a buffer filled with audio samples for multiple waveforms at various frequencies. It then uses this buffer to create a WAV file. Some critical constants include:
 
-The main function determines the increment for each audio sample to produce the desired frequency. It then populates a buffer with audio samples for each frequency. Samples are produced by evaluating the waveform function's audio at the current wave position, then scaling and translating the [-1,1] function range to a 16-bit signed integer range. After audio data production, the program configures the libsndfile info structure (sfinfo), opens the output file, writes the audio data, and concludes by closing the file.
+SAMPLE_RATE: The number of audio samples taken per second.
+TWO_PI: Represents 2×Pi for a full circle in radians.
+MAX_AMPLITUDE: The highest amplitude the audio wave can achieve.
+The main function calculates the increment needed for each audio sample to generate the desired frequency. It then fills a buffer with the audio samples corresponding to each frequency. These samples are derived from the waveform function's evaluation at the current wave position. This is followed by scaling and translating the waveform's [-1,1] range to a 16-bit signed integer domain. Once the audio data generation is complete, the program sets up the libsndfile info structure (sfinfo), opens the designated output file, writes the audio data, and finally, closes the file.
 
 ## Contributor
 
