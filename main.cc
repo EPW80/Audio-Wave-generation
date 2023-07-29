@@ -54,8 +54,10 @@ int main(int argc, char *argv[]) {
     }
 
     if (!WriteToOutputFile(output_file_name, buffer)) {
-        return 1;
-    }
+    std::cerr << "Error: Failed to write to output file.\n";
+    return 1;
+}
+
 
     // Log message for multiple frequencies
     std::cout << "Wrote " << duration << " second(s) of ";
