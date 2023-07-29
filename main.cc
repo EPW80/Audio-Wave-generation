@@ -6,8 +6,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "waveForms.h"
+
 #include "utilities.h"
+#include "waveForms.h"
 
 namespace soundwave {
     const int kSampleRate = 44100;
