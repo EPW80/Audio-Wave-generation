@@ -5,7 +5,8 @@
 
 #include <cmath>
 
-namespace waveforms {
+namespace waveforms
+{
     const double kTwoPi = 2.0 * M_PI;
     // Generates a sine wave for the given phase x.
     double SineWave(double x);
@@ -15,6 +16,6 @@ namespace waveforms {
     double SawtoothWave(double x);
     // Generates a triangle wave for the given phase x.
     double TriangleWave(double x);
-}  // namespace waveforms
+} // namespace waveforms
 
-#endif  // WAVEFORMS_H_
+#endif // WAVEFORMS_H_
